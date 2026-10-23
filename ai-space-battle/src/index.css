@@ -1,0 +1,98 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: #f0f4ff;
+  background: #080e1d;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --color-background: #080e1d;
+  --color-panel: #101a30;
+  --color-border: #25314e;
+  --color-text: #f0f4ff;
+  --color-muted: #98a7c7;
+  --color-accent: #60f0d0;
+  --color-danger: #ff647c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 280px;
+  min-height: 100%;
+  background: var(--color-background);
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-width: 280px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(34, 69, 111, 0.19),
+      transparent 48%
+    ),
+    var(--color-background);
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+button,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  color: inherit;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+select {
+  color-scheme: dark;
+}
+
+::selection {
+  color: #061a1b;
+  background: #60f0d0;
+}
+
+:focus-visible {
+  outline: 2px solid #60f0d0;
+  outline-offset: 3px;
+}
+
+img,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
